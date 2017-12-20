@@ -1,0 +1,8 @@
+/**
+ * @todo hn统一公共日志生成类
+ * 调用方法:通过单例接口获取类再写日志，$log = HnPublicLog::getinstance('folder');$log->hnLog($dataLog,$title,1);
+ * 日志目录:shop/hnlog_/public_log/ ,按folder建立，可带斜杠建立多层目录
+ * 日志级别说明:1正常日志级别 重要日志，程序运行就记录; 10 debug日志记录，自动添加session、post数据 调试代码找bug时记录; 100 页面输出日志、生成静态文本日志，本地环境使用,将debug级别日志输出页面
+ * debug级别日志:当系统设置log级别为debug且该debug日志模块有开启才会记录日志
+ * debug级别日志开关:shop/data/hn_define.php里的HN_LOG_LEVEL与HN_DEBUG_LOG_MODULE
+ */
